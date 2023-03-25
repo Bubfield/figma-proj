@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #182469;
+  font-family: "Jost", sans-serif;
+  margin: 0;
+}
+
+header {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#header-img-list-div {
+  display: flex;
+}
+
+#header-img-div {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+#header-list {
+  display: flex;
+  list-style: none;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+#header-list li {
+  opacity: 0.7;
+  margin-right: 3rem;
+  transition: opacity 0.5s ease;
+}
+
+#orange-bar {
+  height: 0.12rem;
+  width: 0;
+  margin: 0.1rem auto 0 auto;
+  transition: width 0.15s linear;
+  background-color: #ff8a00;
+}
+
+#login-btn-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+#login-btn {
+  background-color: white;
+  color: #182469;
+  border: none;
+  border-radius: 0.5rem;
+  width: 6.5rem;
+  height: 2.6rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+#login-btn-orange-bar {
+  height: 0.15rem;
+  width: 0;
+  margin: 0.4rem auto 0 auto;
+  transition: width 0.15s linear;
+  background-color: #ff8a00;
+}
