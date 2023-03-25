@@ -15,7 +15,7 @@ body {
 header {
   margin-top: 1rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 #header-img-list-div {
@@ -41,6 +41,7 @@ header {
   opacity: 0.7;
   margin-right: 3rem;
   transition: opacity 0.5s ease;
+  cursor: pointer;
 }
 
 #orange-bar {
