@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .main {
+        display: block;
+        position: relative;
+        padding-left: 45px;
+        cursor: pointer;
+      }
+
+      /* Hide the default checkbox */
+      input[type="checkbox"] {
+        visibility: hidden;
+      }
+      /* Creating a custom checkbox
+        based on demand */
+      .geekmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.25rem;
+        width: 1.25rem;
+        background-color: white;
+        border: 0.1rem solid lightgrey;
+        border-radius: 0.2rem;
+      }
+
+      /* Specify the background color to be
+        shown when checkbox is checked */
+      .main input:checked ~ .geekmark {
+        background-color: orange;
+        border: none;
+      }
+
+      .geekmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      .main input:checked ~ .geekmark:after {
+        display: block;
+      }
+
+      /* Styling the checkmark using webkit */
+      /* Rotated the rectangle by 45 degree and 
+        showing only two border to make it look
+        like a tickmark */
+      .main .geekmark:after {
+        left: 5.5px;
+        bottom: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <label class="main"
+      >GeeksforGeeks
+      <input type="checkbox" checked="checked" />
+      <span class="geekmark"></span>
+    </label>
+  </body>
+</html>

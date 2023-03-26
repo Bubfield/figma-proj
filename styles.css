@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
 
 *,
 :after,
@@ -8,24 +9,25 @@
 
 body {
   background-color: #182469;
-  font-family: "Jost", sans-serif;
+
   margin: 0;
 }
 
 header {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
 }
 
 #header-img-list-div {
   display: flex;
+  margin-left: -3rem;
 }
 
 #header-img-div {
   display: flex;
   align-items: center;
-  margin-right: 4rem;
+  margin-right: 1.5rem;
 }
 
 #header-list {
@@ -35,11 +37,12 @@ header {
   color: white;
   font-weight: 500;
   line-height: 140%;
+  font-family: "Manrope", sans-serif;
 }
 
 #header-list li {
   opacity: 0.7;
-  margin-right: 3rem;
+  margin-right: 2.5rem;
   transition: opacity 0.5s ease;
   cursor: pointer;
 }
@@ -68,10 +71,16 @@ header {
   height: 2.6rem;
   font-weight: 500;
   font-size: 1.1rem;
-  font-family: "Jost", sans-serif;
+  font-family: "Manrope", sans-serif;
   text-align: center;
   cursor: pointer;
   transition: opacity 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+#login-btn:hover {
+  background-color: #ff8a00;
+  color: white;
 }
 
 #login-btn-orange-bar {
@@ -80,4 +89,269 @@ header {
   margin: 0.4rem auto 0 auto;
   transition: width 0.15s linear;
   background-color: #ff8a00;
+}
+
+#below-header-div {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  width: calc(100% - 60px);
+  flex-wrap: wrap;
+}
+
+#drive-your-business-div {
+  margin-top: 7rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+
+#drive-your-business-div h1 {
+  width: 45rem;
+  color: white;
+  font-size: 3.5rem;
+  line-height: 60px;
+  font-family: "Manrope", sans-serif;
+}
+
+#drive-your-business-div p {
+  color: white;
+  font-family: "Jost", sans-serif;
+  width: 33rem;
+  font-size: 1.13rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 5rem;
+}
+
+#orange-div-highlight {
+  background-color: #ff8a00;
+  width: 211px;
+  height: 8px;
+  position: absolute;
+  border-radius: 5px;
+  top: 373px;
+  z-index: -1;
+  left: 128px;
+}
+
+#registration-form-outer-div {
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+#registration-form-div {
+  background-color: white;
+  min-width: 28rem;
+  min-height: 31rem;
+  border-radius: 0.5rem;
+  font-family: "Manrope", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#registration-form-div h1 {
+  color: #000100;
+  margin-block-end: 0.5rem;
+}
+
+#registration-form-div p {
+  margin-block-start: 0;
+  color: #848e99;
+  font-size: 0.85rem;
+}
+
+#registration-h1andp-div {
+  padding-top: 0.1rem;
+  max-width: 27rem;
+  height: 7rem;
+  margin-bottom: 1.5rem;
+}
+
+#scroll-to-learn-more-div {
+  margin-top: 6rem;
+  margin-left: -2rem;
+}
+
+#scroll-to-learn-more {
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  list-style: none;
+}
+
+#scroll-to-learn-more li,
+#caret-icon {
+  display: inline;
+}
+
+#caret-icon {
+  margin-right: 1.5rem;
+}
+
+#registration-most-outer-div {
+  position: relative;
+}
+
+#email-div {
+  margin-bottom: 1.5rem;
+}
+
+#email {
+  font-family: "Manrope", sans-serif;
+  margin-top: 0.5rem;
+  width: 23.5rem;
+  height: 2.75rem;
+  padding: 0 0.7rem 0 0.7rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid #e8eaeb;
+  color: #848e99;
+  font-size: 0.9rem;
+}
+
+#TruTik-use-div {
+  margin-bottom: 1.5rem;
+}
+
+#TruTik-use-div button {
+  margin-top: 0.4rem;
+  margin-right: 0.65rem;
+  font-family: "Manrope", sans-serif;
+  width: 7.25rem;
+  height: 2.75rem;
+  padding: 0 0.7rem 0 0.7rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #e8eaeb;
+  color: #848e99;
+  font-size: 0.9rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+#registration-btn-div {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+#registration-btn-div label {
+  font-size: 0.9rem;
+}
+
+#registration-btn-div button {
+  margin-bottom: 1rem;
+  width: 23.5rem;
+  height: 2.85rem;
+  padding: 0 0.7rem 0 0.7rem;
+  border-radius: 0.4rem;
+  background-color: #ff8a00;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  font-family: "Manrope";
+  cursor: pointer;
+}
+
+#registration-btn-div button:hover {
+  background-color: #182469;
+  color: #ff8a00;
+}
+
+#tan-div,
+#alone-blue-div {
+  position: absolute;
+  height: 100px;
+  width: 38px;
+  border-radius: 4px;
+}
+
+#tan-div {
+  z-index: -1;
+  left: -3px;
+  top: 170px;
+  background-color: #ffd8bc;
+}
+
+#alone-blue-div {
+  z-index: -1;
+  left: -3px;
+  top: 350px;
+  background-color: #182469;
+  border: 1px solid white;
+}
+
+#triple-blue-divs {
+}
+
+#light-blue-div {
+}
+
+#registration-btn-div,
+#TruTik-use-div,
+#email-div,
+#registration-h1andp-div {
+  margin-left: 2.2rem;
+}
+
+#subscribe-newsletter {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: white;
+  border: 0.1rem solid lightgrey;
+  border-radius: 0.2rem;
+}
+
+#subscribe-newsletter input:checked ~ .checkmark {
+  background-color: #ff8a00;
+  border: none;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+#subscribe-newsletter input:checked ~ .checkmark:after {
+  display: block;
+}
+
+#subscribe-newsletter .checkmark:after {
+  left: 6.71px;
+  bottom: 5px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2.5px 2.5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#btn-checkmark {
+  left: 6.71px;
+  bottom: 5px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2.5px 2.5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#carrier,
+#shipper,
+#contractor {
+  position: relative;
 }
